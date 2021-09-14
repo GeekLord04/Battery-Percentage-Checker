@@ -1,4 +1,4 @@
-package com.example.batterypercentagechecker;
+package com.geeklord.batterypercentagechecker;
 
 import android.content.Context;
 

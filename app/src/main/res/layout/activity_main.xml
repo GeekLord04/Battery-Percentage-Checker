@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroung_new"
+    android:background="@drawable/background_gradient"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,36 +12,38 @@
         android:layout_width="275dp"
         android:layout_height="117dp"
         android:textAlignment="center"
-        android:textColor="#BAB7B7"
+        android:textColor="#222121"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.223" />
+        app:layout_constraintVertical_bias="0.118" />
 
     <TextView
         android:id="@+id/status"
         android:layout_width="228dp"
         android:layout_height="107dp"
+        android:layout_marginBottom="96dp"
         android:textAlignment="center"
-        android:textColor="#BAB7B7"
+        android:textColor="#222121"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.866" />
+        app:layout_constraintTop_toBottomOf="@+id/circlebar"
+        app:layout_constraintVertical_bias="0.819" />
 
     <com.github.lzyzsd.circleprogress.CircleProgress
         android:id="@+id/circlebar"
-        android:layout_width="123dp"
-        android:layout_height="116dp"
-        app:layout_constraintBottom_toTopOf="@+id/status"
+        android:layout_width="140dp"
+        android:layout_height="136dp"
+        app:circle_finished_color="#2C5364"
+        app:circle_unfinished_color="#0F2027"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/battery"
-        app:layout_constraintVertical_bias="0.245" />
+        app:layout_constraintVertical_bias="0.276" />
 </androidx.constraintlayout.widget.ConstraintLayout>
